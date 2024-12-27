@@ -13,6 +13,7 @@ import MyOrders from "./components/UserOrders/Order.jsx";
 import OrderManagement from "./components/AdminDashBoard/OrderMgnt/OrderMgnt.jsx";
 import EditMenuItem from "./components/AdminDashBoard/EditMenu/EditMenu.jsx";
 import FoodTrcukMgnt from "./components/AdminDashBoard/FoodTruckMgnt/FoodTruckMgnt.jsx";
+import Footer from "./Footer/Footer.jsx";
 
 
 export default function App(){
@@ -34,6 +35,7 @@ export default function App(){
         <Route path="/admin/updateMenu/:id" element={<EditMenuItem/>}/>
         <Route path="/admin/foodTruckMgnt/:id" element={<FoodTrcukMgnt/>}/>
       </Routes>
+      <Footer></Footer>
     </div>
   )
 }

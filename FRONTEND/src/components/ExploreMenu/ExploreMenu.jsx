@@ -134,7 +134,7 @@ export default function ExploreMenu(){
     console.log("Lattitude",foodMenu.geomerty.coordinates[0])
     return(
         <div className="ExploreMenu">
-            <div className="foodTruck">
+            <div className="foodTruckS">
                 <img src={foodMenu.image.url} alt="image"/>
                 <div className="foodTruckDetails">
                     <h3>{foodMenu.name}</h3>
