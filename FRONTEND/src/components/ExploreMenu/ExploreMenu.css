@@ -1,0 +1,137 @@
+.ExploreMenu {
+    padding: 20px;
+    background-color: #f8f8f8;
+    margin-top: 80px;
+}
+  
+.foodTruck {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+  
+.foodTruck img {
+    width: 100%;
+    height: 22vw;
+    object-fit: cover;
+    border-radius: 8px;
+    margin:auto;
+}
+  
+.foodTruckDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.foodTruckDetails h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+  
+.foodTruckDetails p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
+  
+.Menu {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    width: 80%;
+    margin: auto;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding-top: 20px;
+}
+  
+.Menu p {
+    font-size: 18px;
+    color: #666;
+}
+
+.ExploreMenu .add-to-cart-button{
+  padding: 10px;
+  background-color:orange;
+  font-size: 15px;
+  border: none;
+  color: white;
+  text-align: center;
+  position: relative;
+  left: 150px;
+  margin-top: 20px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+@media (max-width:900px){
+  .Menu{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .ExploreMenu .add-to-cart-button{
+    left: 90px;
+  }
+    
+}
+
+@media (max-width:800px) {
+  .ExploreMenu .add-to-cart-button{
+    left: 80px;
+  }
+}
+
+@media (max-width:750px) {
+  .ExploreMenu .add-to-cart-button{
+    left: 70px;
+  }
+}
+
+@media (max-width:700px) {
+  .ExploreMenu .add-to-cart-button{
+    left: 60px;
+  }
+}
+
+@media (max-width:650px) {
+  .ExploreMenu .add-to-cart-button{
+    left: 55px;
+  }
+}
+  
+@media (max-width:600px){
+  .Menu{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .ExploreMenu .add-to-cart-button{
+    left: 50px;
+  }
+    
+}
+  
+@media (max-width:550px) {
+  .foodTruckDetails h3 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .foodTruckDetails p {
+    font-size: 10px;
+  }
+  .Menu p {
+    font-size: 10px;
+  }
+  .ExploreMenu .add-to-cart-button{
+    left: 30px;
+    font-size: 13px;
+    padding: 5px;
+  }
+  
+}
+  

@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.order-management {
+    margin-top: 90px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.order-management h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.order-management table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.order-management th,
+.order-management td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.order-management th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.order-management button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+.order-management button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .order-management table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .order-management th, 
+    .order-management td {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .order-management h2 {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-management h2 {
+        font-size: 1rem;
+    }
+
+    .order-management th, 
+    .order-management td {
+        padding: 6px;
+        font-size: 0.75rem;
+    }
+
+    .order-management button {
+        margin: 0 3px;
+        padding: 4px 8px;
+        font-size: 0.7rem;
+    }
+}

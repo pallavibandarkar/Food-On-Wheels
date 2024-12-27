@@ -1,0 +1,77 @@
+.foodTruck {
+    max-width: 600px;
+    margin: 90px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .foodTruck-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input[type="text"], input[type="file"] {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+  .foodTruck-image {
+    max-width: 100%;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .submit-btn {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .foodTruck {
+      padding: 15px;
+    }
+  
+    .form-title {
+      font-size: 1.2em;
+    }
+  }
+  

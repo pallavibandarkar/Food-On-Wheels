@@ -1,0 +1,13 @@
+.foodtruck{
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+button{
+    background-color: green;
+    color: white;
+    padding: 4px;
+    border-radius: 2px;
+    margin: 10px;
+}

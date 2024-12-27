@@ -1,0 +1,21 @@
+.foodtrucks{
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+@media (max-width: 768px) {
+    .foodtrucks {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+}
+
+/* For mobile devices (one column) */
+@media (max-width: 480px) {
+    .foodtrucks {
+        grid-template-columns: 1fr; /* Single column */
+    }
+}

@@ -1,0 +1,30 @@
+.foodT {
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 330px;
+    background-color: white;
+    transition: 1s;
+}
+.foodT img{
+    width: 100%;
+    border-radius: 5px;
+}
+.foodT:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.foodT button{
+    color: white;
+    background-color: orange;
+    font-size: 15px;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    margin-top: 4px;
+    cursor: pointer;
+}

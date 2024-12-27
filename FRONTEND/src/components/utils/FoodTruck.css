@@ -1,0 +1,20 @@
+.FoodTruck{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-70%);
+
+}
+h1{
+    text-align: center;
+}
+.FoodTruckForm input{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid gray;
+}
+.FoodTruckForm{
+    padding: 10px;
+    border: 1px solid gray;
+}
