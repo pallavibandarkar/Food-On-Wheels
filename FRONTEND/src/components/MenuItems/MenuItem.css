@@ -66,7 +66,7 @@
 }
 
 .menuItem .removeRed {
-  background-color: #FF4D4D;
+  background-color: #ff7f32;
   border-radius: 50%; 
 }
 
@@ -80,3 +80,9 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
   
+@media (max-width:550px) {
+  .menuItem img{
+    height: 100px;
+    width: 100px;
+  }
+}

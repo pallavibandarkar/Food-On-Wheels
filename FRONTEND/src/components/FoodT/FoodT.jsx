@@ -7,7 +7,7 @@ export default function FoodT({_id,name,schedule,location,category,url}){
 
     return(
         <div className="foodT">
-            <img src={url} width="300px" height="300px"/>
+            <img src={url}/>
             <div className="foodTdetails">
                 <h4>{name}</h4>
                 <p>{category}</p>

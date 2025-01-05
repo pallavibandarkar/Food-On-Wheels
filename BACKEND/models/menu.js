@@ -19,7 +19,18 @@ const menuSchema = new Schema({
     image:{
         url:String,
         filename:String,
-    }
+    },
+    ingredients:[{
+        ingredient:{
+            type:String,
+        },
+        quantity:{
+            type:Number
+        },
+        unit:{
+            type:String,
+        }
+    }]
 })
 
 const Menu = mongoose.model('Menu',menuSchema)

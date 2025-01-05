@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Calendar</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #calendar {
+            max-width: 80%;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            position: relative;
+        }
+        .selected-dates {
+            /* position: absolute;
+            top: 70px; 
+            left: 10px; */
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px;
+            border-radius: 5px;
+            display: none; /* Initially hidden */
+        }
+        .total-price {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .error-message {
+            color: red;
+            display: none; /* Initially hidden */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="image1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="image2.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+<!-- <div id="calendar">
+    <div class="error-message" id="errorMessage">Please select a valid date range.</div>
+    <div id="inlineCalendar"></div> 
+    <p class="total-price">Total Price: ₹<span id="totalPrice">0</span></p>
+    <div class="selected-dates" id="selectedDates"></div> 
+</div> -->
+    
+<!-- <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> -->
+<!-- <script>
+    const perNightCost = 1000; // Example price per night
+    const totalPriceElement = document.getElementById('totalPrice');
+    const selectedDatesElement = document.getElementById('selectedDates');
+    const errorMessageElement = document.getElementById('errorMessage');
+
+    // Initialize Flatpickr in inline mode
+    const calendar = flatpickr("#inlineCalendar", {
+        mode: "range",
+        minDate: "today",
+        dateFormat: "Y-m-d",
+        inline: true, // This makes the calendar always visible
+        onChange: function(selectedDates) {
+            if (selectedDates.length === 2) {
+                const [startDate, endDate] = selectedDates;
+
+                // Check if the start date is before the end date
+                if (startDate < endDate) {
+                    const totalNights = Math.ceil((endDate - startDate) / (1000 * 60 * 60 * 24));
+                    const totalPrice = totalNights * perNightCost;
+
+                    // Update the total price
+                    totalPriceElement.textContent = totalPrice.toLocaleString("en-IN");
+
+                    // Display selected dates
+                    selectedDatesElement.textContent = `Start Date: ${startDate.toLocaleDateString()} - End Date: ${endDate.toLocaleDateString()}`;
+                    selectedDatesElement.style.display = 'block'; // Show the selected dates
+                    errorMessageElement.style.display = 'none'; // Hide error message
+                } else {
+                    // Show error message if the range is invalid
+                    errorMessageElement.style.display = 'block';
+                    totalPriceElement.textContent = '0';
+                    selectedDatesElement.style.display = 'none'; // Hide if not both dates are valid
+                }
+            } else {
+                totalPriceElement.textContent = '0';
+                selectedDatesElement.style.display = 'none'; // Hide if not both dates are selected
+                errorMessageElement.style.display = 'none'; // Hide error message
+            }
+        }
+    });
+</script> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

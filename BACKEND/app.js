@@ -12,6 +12,7 @@ const useRouter = require("./routers/userRouter.js")
 const orderRouter = require("./routers/order.js")
 const cartRouter = require("./routers/cart.js")
 const adminOrderRouter = require("./routers/adminRouter.js")
+const inventoryRouter = require("./routers/inventory.js")
 const session = require('express-session')
 const User = require("./models/user.js")
 const passport = require('passport')
@@ -73,6 +74,7 @@ app.use("/profile",useRouter)
 app.use("/cart",cartRouter)
 app.use("/order",orderRouter)
 app.use("/admin",adminOrderRouter)
+app.use("/inventory",inventoryRouter)
 
 app.get("/profile/status", (req, res) => {
     if (req.isAuthenticated()) {

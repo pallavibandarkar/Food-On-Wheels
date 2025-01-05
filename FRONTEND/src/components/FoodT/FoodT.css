@@ -12,6 +12,7 @@
 }
 .foodT img{
     width: 100%;
+    box-sizing: content-box;
     border-radius: 5px;
 }
 .foodT:hover {

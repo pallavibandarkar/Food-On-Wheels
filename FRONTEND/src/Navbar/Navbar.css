@@ -40,7 +40,7 @@ html, body {
 .NavLogo h4{
     align-items: center;
     font-size: 30px;
-    color: #ff8c00;
+    color:#ff7f32;
 }
 
 .Navsearch {
@@ -53,7 +53,7 @@ html, body {
 .Navsearch input {
     flex-grow: 1; /* Allow input to grow */
     padding: 9px;
-    border: 2px solid orange;
+    border: 2px solid #ff7f32;
     border-radius: 5px;
 }
 
@@ -64,13 +64,13 @@ html, body {
     cursor: pointer;
     border: none;
     background-color:white;
-    color: #ff8c00;
+    color: #ff7f32;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.5);
     transition: 1s;
 }
 .Navprofilebtn button:hover {
-    background-color:#ff8c00;
+    background-color:#ff7f32;
     color: white; 
     border: none;
 }
@@ -142,7 +142,7 @@ html, body {
         top: 10px;
         left: 10px;
         font-size: 30px;
-        color: #ff8c00;
+        color: #ff7f32;
         cursor: pointer;
     }
     
